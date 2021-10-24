@@ -1,6 +1,6 @@
 export default class RestoService{
     // _apiBase = 'http://localhost:3000';
-    _apiBase = window.location.host;
+    _apiBase = 'https://restaurant-order-application.herokuapp.com';
     
     async getResource(url) {
         const res = await fetch(`${this._apiBase}${url}`);
